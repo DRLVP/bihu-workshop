@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+/* Tailwind CSS v4 Custom Theme Configuration */
+@theme {
+  /* Traditional Assamese Gamusa colors (white/cream with red borders) */
+  --color-gamusa-red: #C41E3A;
+  /* Vibrant Bihu red */
+  --color-gamusa-deep: #8B1A1A;
+  /* Deep maroon (traditional Gamusa border - "Anchu" red) */
+  --color-gamusa-crimson: #991B1B;
+  /* Rich crimson accent */
+
+  /* Muga silk inspired colors */
+  --color-muga-gold: #DAA520;
+  /* Muga silk inspired gold */
+  --color-muga-beige: #FEF3C7;
+  /* Light beige */
+  --color-muga-cream: #FFF8E7;
+  /* Gamusa cream/white background */
+  --color-muga-light: #FFFBF0;
+  /* Ultra light cream */
+
+  /* Assam tea garden green */
+  --color-assam-green: #2F5233;
+  /* Tea garden green */
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+}
+
+/* Bihu Cultural Design Elements */
+
+/* Gamusa-inspired border pattern */
+.gamusa-border {
+  position: relative;
+  padding: 2rem;
+}
+
+.gamusa-border::before,
+.gamusa-border::after {
+  content: '';
+  position: absolute;
+  background: repeating-linear-gradient(90deg,
+      #8B1A1A 0px,
+      #8B1A1A 4px,
+      #FFF8E7 4px,
+      #FFF8E7 8px,
+      #C41E3A 8px,
+      #C41E3A 12px,
+      #FFF8E7 12px,
+      #FFF8E7 16px);
+  height: 8px;
+  left: 0;
+  right: 0;
+}
+
+.gamusa-border::before {
+  top: 0;
+}
+
+.gamusa-border::after {
+  bottom: 0;
+}
+
+/* Animated gradient background for hero */
+.bihu-hero-gradient {
+  background: linear-gradient(135deg,
+      #8B1A1A 0%,
+      #991B1B 25%,
+      #C41E3A 50%,
+      #DAA520 75%,
+      #F59E0B 100%);
+  background-size: 400% 400%;
+  animation: bihuGradient 15s ease infinite;
+}
+
+.gamusa-color {
+  background-color: #C41E3A;
+}
+
+@keyframes bihuGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Decorative floral pattern overlay */
+.floral-pattern {
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.06) 0%, transparent 50%);
+}
+
+/* Premium shine effect */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 60%,
+      transparent 100%);
+  animation: shine 6s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
