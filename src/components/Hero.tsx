@@ -38,7 +38,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden"
+      className="relative min-h-[600px] sm:min-h-[700px] lg:min-h-[800px] flex items-center overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -102,56 +102,54 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge with animation */}
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-6 py-3 rounded-full mb-8 border border-white/30 shine-effect animate-fade-in-up">
-            <span className="h-2.5 w-2.5 bg-muga-cream rounded-full animate-pulse"></span>
-            <span className="text-white text-sm md:text-base font-semibold tracking-wide">Cultural Heritage Program 2026</span>
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 border border-white/30 shine-effect animate-fade-in-up">
+            <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 bg-muga-cream rounded-full animate-pulse"></span>
+            <span className="text-white text-xs sm:text-sm md:text-base font-semibold tracking-wide">Cultural Heritage Program 2026</span>
           </div>
 
           {/* Main Heading with stagger animation */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-tight animate-fade-in-up delay-100 drop-shadow-2xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-6 sm:mb-8 leading-tight animate-fade-in-up delay-100 drop-shadow-2xl px-2">
             Bihu Dance Workshop
-            <span className="block text-muga-cream mt-3 text-4xl md:text-6xl lg:text-7xl">2026</span>
+            <span className="block text-muga-cream mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">2026</span>
           </h1>
 
           {/* Assamese text with enhanced styling */}
-          <div className="mb-6 animate-fade-in-up delay-200">
-            <p className="text-3xl md:text-4xl text-muga-cream mb-2 font-bold tracking-wide drop-shadow-lg" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="mb-4 sm:mb-6 animate-fade-in-up delay-200 px-2">
+            <p className="text-2xl sm:text-3xl md:text-4xl text-muga-cream mb-2 font-bold tracking-wide drop-shadow-lg" style={{ fontFamily: 'Georgia, serif' }}>
               বিহু নৃত্যৰ কৰ্মশালা
             </p>
-            <div className="w-32 h-1 bg-gradient-to-r from-transparent via-muga-gold to-transparent mx-auto mt-4"></div>
+            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-transparent via-muga-gold to-transparent mx-auto mt-3 sm:mt-4"></div>
           </div>
 
           {/* Sub-headline with enhanced typography */}
-          <p className="text-xl md:text-2xl text-white/95 mb-12 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up delay-300 drop-shadow-lg">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up delay-300 drop-shadow-lg px-4">
             Preserving Culture · Empowering Youth · Celebrating Assamese Heritage
           </p>
 
           {/* CTA Buttons with hover effects */}
-          <div className="flex flex-col sm:flex-row gap-5 justify-center mb-16 animate-fade-in-up delay-400">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 justify-center mb-12 sm:mb-14 md:mb-16 animate-fade-in-up delay-400 px-4">
             <Button
               variant="bihu"
-              size="xl"
               onClick={handleRegisterClick}
-              className="bg-white text-gamusa-deep hover:bg-muga-cream hover:scale-105 transition-all duration-300 shadow-2xl font-bold text-lg px-8 py-6"
+              className="w-full sm:w-auto bg-white text-gamusa-deep hover:bg-muga-cream hover:scale-105 transition-all duration-300 shadow-2xl font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6"
             >
               Join the Workshop
-              <ArrowRight className="ml-2 h-6 w-6" />
+              <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
             </Button>
             <Button
               variant="outline"
-              size="xl"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-white/15 backdrop-blur-md text-white border-2 border-white/40 hover:bg-white/25 hover:scale-105 transition-all duration-300 font-semibold text-lg px-8 py-6"
+              className="w-full sm:w-auto bg-white/15 backdrop-blur-md text-white border-2 border-white/40 hover:bg-white/25 hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6"
             >
               Learn More
             </Button>
           </div>
 
           {/* Enhanced stats cards with icons */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-in-up delay-500">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in-up delay-500 px-4">
             {[
               { label: 'Workshop Days', value: '5', icon: Calendar },
               { label: 'Training Sessions', value: '10', icon: Music },
