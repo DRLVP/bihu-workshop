@@ -24,7 +24,7 @@ export default function WorkshopDetails() {
     {
       icon: Phone,
       title: 'Contact Info',
-      content: '+91 98765 43210',
+      content: '+91 0101010101',
       subContent: 'bihu.workshop@example.com',
     },
   ];

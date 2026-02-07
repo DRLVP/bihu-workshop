@@ -1,9 +1,13 @@
-import GoogleFormEmbed from './GoogleFormEmbed';
-import { UserPlus } from 'lucide-react';
+import { UserPlus, ExternalLink } from 'lucide-react';
+import { Button } from './ui/button';
 
 export default function Registration() {
-  // Replace this URL with your actual Google Form URL
-  const googleFormUrl = 'https://forms.gle/MEKEE6Un18YmV96j9';
+  // Google Form URL - opens in new tab when button is clicked
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform';
+
+  const handleRegisterClick = () => {
+    window.open(googleFormUrl, '_blank');
+  };
 
   return (
     <section id="register" className="py-16 md:py-24 bg-gradient-to-b from-muga-light/30 to-white">
@@ -19,14 +23,37 @@ export default function Registration() {
             Register Today
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Fill out the form below to book your seat in the Bihu Dance Workshop 2026
+            Click the button below to fill out the registration form for Bihu Dance Workshop 2026
           </p>
         </div>
 
-        {/* Google Form Embed */}
-        <GoogleFormEmbed formUrl={googleFormUrl} />
+        {/* Registration CTA */}
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-gamusa-red via-gamusa-deep to-muga-gold p-8 rounded-2xl shadow-2xl text-center">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8">
+              <UserPlus className="w-16 h-16 text-gamusa-red mx-auto mb-4" />
+              <h3 className="text-2xl md:text-3xl font-bold text-gamusa-deep mb-3">
+                Ready to Join?
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Fill out our registration form to secure your spot in the workshop
+              </p>
+              <Button
+                onClick={handleRegisterClick}
+                size="xl"
+                className="bg-gradient-to-r from-gamusa-red to-gamusa-deep hover:from-gamusa-deep hover:to-gamusa-red text-white font-bold text-lg px-10 py-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                Open Registration Form
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </Button>
+              <p className="text-sm text-gray-500 mt-4">
+                The form will open in a new tab
+              </p>
+            </div>
+          </div>
+        </div>
 
-        {/* Additional Info */}
+        {/* Registration Guidelines */}
         <div className="mt-12 max-w-2xl mx-auto">
           <div className="bg-gradient-to-r from-gamusa-red to-muga-gold p-1 rounded-xl">
             <div className="bg-white rounded-lg p-6">

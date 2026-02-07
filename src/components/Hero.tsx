@@ -17,21 +17,19 @@ export default function Hero() {
     { image: bihu3, alt: 'Bihu Dance Performance 3' },
   ];
 
-  // Auto-advance slides
+  // Auto-advance slides every 3 seconds
   useEffect(() => {
     if (!isPaused && !useVideo) {
       const interval = setInterval(() => {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
-      }, 5000);
+      }, 3000); // Changed from 5000 to 3000 (3 seconds)
       return () => clearInterval(interval);
     }
   }, [isPaused, useVideo, slides.length]);
 
-  const scrollToRegister = () => {
-    const element = document.getElementById('register');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleRegisterClick = () => {
+    // Open Google Form in new tab
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform', '_blank');
   };
 
   const goToSlide = (index: number) => {
@@ -46,11 +44,11 @@ export default function Hero() {
     >
       {/* Background Media */}
       {useVideo ? (
-        /* YouTube Video Background */
+        /* YouTube Video Background with Sound */
         <div className="absolute inset-0">
           <iframe
             className="absolute inset-0 w-full h-full object-cover"
-            src="https://www.youtube.com/embed/uWJ8bRttDrE?autoplay=1&mute=1&loop=1&playlist=uWJ8bRttDrE&controls=0&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/uWJ8bRttDrE?autoplay=1&mute=0&loop=1&playlist=uWJ8bRttDrE&controls=0&showinfo=0&rel=0&modestbranding=1"
             title="Bihu Dance Background"
             allow="autoplay; encrypted-media"
             allowFullScreen
@@ -136,7 +134,7 @@ export default function Hero() {
             <Button
               variant="bihu"
               size="xl"
-              onClick={scrollToRegister}
+              onClick={handleRegisterClick}
               className="bg-white text-gamusa-deep hover:bg-muga-cream hover:scale-105 transition-all duration-300 shadow-2xl font-bold text-lg px-8 py-6"
             >
               Join the Workshop

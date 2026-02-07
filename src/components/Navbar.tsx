@@ -62,7 +62,7 @@ export default function Navbar() {
             <Button
               variant="bihu"
               size="lg"
-              onClick={() => scrollToSection('register')}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform', '_blank')}
               className="!text-white font-bold shadow-lg"
             >
               Register Now

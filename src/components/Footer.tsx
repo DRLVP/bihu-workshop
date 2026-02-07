@@ -65,7 +65,7 @@ export default function Footer() {
               })}
             </div>
             <p className="text-white/80 text-sm">
-              Contact: +91 98765 43210
+              Contact: +910101010101
             </p>
           </div>
         </div>
