@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 export default function Registration() {
   // Google Form URL - opens in new tab when button is clicked
-  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform';
+  const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSeI9xfbUFfkyB_C-ByfvLLXAQIcoYyjEPoz_yLg8gKFubLlrg/viewform';
 
   const handleRegisterClick = () => {
     window.open(googleFormUrl, '_blank');

@@ -1,7 +1,6 @@
 import { Button } from './ui/button';
 import { Menu } from 'lucide-react';
-import japiImage from '../assets/japee.jpg';
-import lachitLogo from '../assets/lachit-sena-logo.png';
+import logo from '../assets/logo.jpeg';
 
 export default function Navbar() {
   const scrollToSection = (id: string) => {
@@ -20,28 +19,15 @@ export default function Navbar() {
             {/* Japi Image */}
             <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full overflow-hidden border-2 border-gamusa-red shadow-lg flex-shrink-0">
               <img
-                src={japiImage}
+                src={logo}
                 alt="Japi - Traditional Assamese Hat"
                 className="w-full h-full object-cover"
               />
             </div>
-
-            {/* Beer Lachit Sena Logo */}
-            <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex-shrink-0">
-              <img
-                src={lachitLogo}
-                alt="Beer Lachit Sena Logo"
-                className="w-full h-full object-contain drop-shadow-md"
-              />
-            </div>
-
             <div className="min-w-0 flex-1">
               <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gamusa-deep truncate">
-                বীৰ লাচিত সেনা অসম
+                লাকুৱা কেন্দ্ৰীয় বিহু
               </h2>
-              <p className="text-xs md:text-sm text-gray-600 hidden sm:block truncate">
-                লাকুৱা আঞ্চলিক সমিতি।
-              </p>
             </div>
           </div>
 

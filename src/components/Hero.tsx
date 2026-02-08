@@ -29,7 +29,7 @@ export default function Hero() {
 
   const handleRegisterClick = () => {
     // Open Google Form in new tab
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform', '_blank');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeI9xfbUFfkyB_C-ByfvLLXAQIcoYyjEPoz_yLg8gKFubLlrg/viewform', '_blank');
   };
 
   const goToSlide = (index: number) => {
@@ -112,14 +112,14 @@ export default function Hero() {
 
           {/* Main Heading with stagger animation */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-6 sm:mb-8 leading-tight animate-fade-in-up delay-100 drop-shadow-2xl px-2">
-            Bihu Dance Workshop
-            <span className="block text-muga-cream mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">2026</span>
+            লাকুৱা কেন্দ্ৰীয় বিহু কৰ্মশালা
+            <span className="block text-muga-cream mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">২০২৬</span>
           </h1>
 
           {/* Assamese text with enhanced styling */}
           <div className="mb-4 sm:mb-6 animate-fade-in-up delay-200 px-2">
             <p className="text-2xl sm:text-3xl md:text-4xl text-muga-cream mb-2 font-bold tracking-wide drop-shadow-lg" style={{ fontFamily: 'Georgia, serif' }}>
-              বিহু নৃত্যৰ কৰ্মশালা
+              স্থানঃ লাইলৌ বৰুৱা ক্ষেত্ৰ (লাকুৱা চাৰিঙ্গীয়া কোঁৱৰ ৰাজহুৱা খেলপথাৰ)
             </p>
             <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-transparent via-muga-gold to-transparent mx-auto mt-3 sm:mt-4"></div>
           </div>
