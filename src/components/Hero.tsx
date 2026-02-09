@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from './ui/button';
-import { ArrowRight, Music, Users, Calendar } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import bihu1 from '../assets/bihu1.jpg';
 import bihu2 from '../assets/bihu2.jpg';
 import bihu3 from '../assets/bihu3.jpg';
@@ -104,37 +104,50 @@ export default function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Badge with animation */}
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 border border-white/30 shine-effect animate-fade-in-up">
-            <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 bg-muga-cream rounded-full animate-pulse"></span>
-            <span className="text-white text-xs sm:text-sm md:text-base font-semibold tracking-wide">Cultural Heritage Program 2026</span>
+          {/* Badge with animation - Enhanced with gradient */}
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-muga-gold/30 via-gamusa-red/20 to-muga-gold/30 backdrop-blur-md px-4 sm:px-6 py-2 sm:py-3 rounded-full mb-6 sm:mb-8 border-2 border-muga-gold/50 shine-effect animate-fade-in-up shadow-xl">
+            <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 bg-muga-gold rounded-full animate-pulse shadow-lg"></span>
+            <span className="text-muga-cream text-xs sm:text-sm md:text-base font-bold tracking-wide">গৰিমাময় ষষ্ঠ বৰ্ষ</span>
           </div>
 
-          {/* Main Heading with stagger animation */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-white mb-6 sm:mb-8 leading-tight animate-fade-in-up delay-100 drop-shadow-2xl px-2">
-            লাকুৱা কেন্দ্ৰীয় বিহু কৰ্মশালা
-            <span className="block text-muga-cream mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">২০২৬</span>
+          {/* Main Heading with gradient text effect */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 leading-tight animate-fade-in-up delay-100 px-2" style={{ fontFamily: 'Georgia, serif' }}>
+            <span className="bg-gradient-to-r from-white via-muga-cream to-white bg-clip-text text-transparent drop-shadow-2xl">
+              লাকুৱা কেন্দ্ৰীয় বিহু কৰ্মশালা
+            </span>
+            <span className="block mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-muga-gold via-muga-cream to-muga-gold bg-clip-text text-transparent drop-shadow-2xl font-black">২০২৬</span>
           </h1>
 
-          {/* Assamese text with enhanced styling */}
+          {/* Venue text with gamosa-inspired background */}
           <div className="mb-4 sm:mb-6 animate-fade-in-up delay-200 px-2">
-            <p className="text-2xl sm:text-3xl md:text-4xl text-muga-cream mb-2 font-bold tracking-wide drop-shadow-lg" style={{ fontFamily: 'Georgia, serif' }}>
-              স্থানঃ লাইলৌ বৰুৱা ক্ষেত্ৰ (লাকুৱা চাৰিঙ্গীয়া কোঁৱৰ ৰাজহুৱা খেলপথাৰ)
-            </p>
-            <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-transparent via-muga-gold to-transparent mx-auto mt-3 sm:mt-4"></div>
+            <div className="inline-block bg-gradient-to-r from-gamusa-red/20 via-muga-gold/30 to-gamusa-red/20 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-2xl border-2 border-muga-gold/40 shadow-2xl">
+              <p className="text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-muga-cream via-white to-muga-cream bg-clip-text text-transparent font-bold tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
+                স্থানঃ লাইলৌ বৰুৱা ক্ষেত্ৰ (লাকুৱা চাৰিঙ্গীয়া কোঁৱৰ ৰাজহুৱা খেলপথাৰ)
+              </p>
+            </div>
+            <div className="w-32 sm:w-40 h-1.5 bg-gradient-to-r from-gamusa-red via-muga-gold to-gamusa-red mx-auto mt-4 sm:mt-5 rounded-full shadow-lg"></div>
           </div>
 
-          {/* Sub-headline with enhanced typography */}
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/95 mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto font-medium leading-relaxed animate-fade-in-up delay-300 drop-shadow-lg px-4">
-            Preserving Culture · Empowering Youth · Celebrating Assamese Heritage
-          </p>
+          {/* Sub-headline with gradient text - Assamese & English */}
+          <div className="mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto animate-fade-in-up delay-300 px-4">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-3 font-bold leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
+              <span className="bg-gradient-to-r from-muga-cream via-muga-gold to-muga-cream bg-clip-text text-transparent drop-shadow-2xl">
+                সংস্কৃতি সংৰক্ষণ · যুৱ শক্তিৰ উত্থান · অসমীয়া ঐতিহ্যৰ উদযাপন
+              </span>
+            </p>
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold leading-relaxed">
+              <span className="bg-gradient-to-r from-white via-muga-beige to-white bg-clip-text text-transparent drop-shadow-xl">
+                Preserving Culture · Empowering Youth · Celebrating Assamese Heritage
+              </span>
+            </p>
+          </div>
 
           {/* CTA Buttons with hover effects */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 justify-center mb-12 sm:mb-14 md:mb-16 animate-fade-in-up delay-400 px-4">
             <Button
               variant="bihu"
               onClick={handleRegisterClick}
-              className="w-full sm:w-auto bg-white text-gamusa-deep hover:bg-muga-cream hover:scale-105 transition-all duration-300 shadow-2xl font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6"
+              className="w-full sm:w-auto bg-white text-gamusa-deep hover:bg-muga-cream hover:scale-105 transition-all duration-300 shadow-2xl font-bold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6 cursor-pointer"
             >
               Join the Workshop
               <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
@@ -142,31 +155,10 @@ export default function Hero() {
             <Button
               variant="outline"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto bg-white/15 backdrop-blur-md text-white border-2 border-white/40 hover:bg-white/25 hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6"
+              className="w-full sm:w-auto bg-white/15 backdrop-blur-md text-white border-2 border-white/40 hover:bg-white/25 hover:scale-105 transition-all duration-300 font-semibold text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-5 md:py-6 cursor-pointer"
             >
               Learn More
             </Button>
-          </div>
-
-          {/* Enhanced stats cards with icons */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto animate-fade-in-up delay-500 px-4">
-            {[
-              { label: 'Workshop Days', value: '5', icon: Calendar },
-              { label: 'Training Sessions', value: '10', icon: Music },
-              { label: 'Expert Trainers', value: '3', icon: Users },
-            ].map((stat) => {
-              const Icon = stat.icon;
-              return (
-                <div
-                  key={stat.label}
-                  className="group bg-white/15 backdrop-blur-md rounded-2xl p-6 border border-white/25 hover:bg-white/25 hover:scale-105 transition-all duration-300 shine-effect"
-                >
-                  <Icon className="w-8 h-8 text-muga-gold mb-3 mx-auto group-hover:scale-110 transition-transform duration-300" />
-                  <div className="text-4xl md:text-5xl font-black text-muga-cream mb-2">{stat.value}</div>
-                  <div className="text-sm md:text-base text-white/90 font-medium">{stat.label}</div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </div>
@@ -178,7 +170,7 @@ export default function Hero() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={`transition-all duration-300 rounded-full ${index === currentSlide
+              className={`transition-all duration-300 rounded-full cursor-pointer ${index === currentSlide
                 ? 'w-12 h-3 bg-white'
                 : 'w-3 h-3 bg-white/50 hover:bg-white/70'
                 }`}
@@ -191,7 +183,7 @@ export default function Hero() {
       {/* Media Toggle Button */}
       <button
         onClick={() => setUseVideo(!useVideo)}
-        className="absolute bottom-8 right-8 z-20 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm font-semibold border border-white/30 hover:bg-white/30 transition-all duration-300"
+        className="absolute bottom-8 right-8 z-20 bg-white/20 backdrop-blur-md px-4 py-2 rounded-full text-white text-sm font-semibold border border-white/30 hover:bg-white/30 transition-all duration-300 cursor-pointer"
       >
         {useVideo ? '📸 Show Images' : '🎥 Play Video'}
       </button>

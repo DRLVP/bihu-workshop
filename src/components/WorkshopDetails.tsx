@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 import { Calendar, MapPin, IndianRupee, Phone } from 'lucide-react';
+import gamosa1 from '../assets/gamosa-1.png';
 
 export default function WorkshopDetails() {
   const details = [
@@ -30,16 +31,38 @@ export default function WorkshopDetails() {
   ];
 
   return (
-    <section id="details" className="py-12 md:py-16 lg:py-24 bg-white overflow-hidden">
+    <section id="details" className="py-12 md:py-16 lg:py-24 bg-white overflow-hidden relative">
+      {/* Decorative Gamosa separator at top */}
+      <div className="absolute top-0 left-0 right-0 h-12 opacity-20 overflow-hidden">
+        <img
+          src={gamosa1}
+          alt="Gamosa pattern"
+          className="w-full h-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
+      </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 md:mb-4 px-2">
-            Workshop Details
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-            Everything you need to know about joining our Bihu Dance Workshop
-          </p>
+        {/* Section Header with Gamosa Frame */}
+        <div className="text-center mb-8 md:mb-12 relative">
+          <div className="relative inline-block">
+            <div className="absolute inset-0 opacity-15 blur-sm">
+              <img
+                src={gamosa1}
+                alt="Gamosa decoration"
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            </div>
+
+            <div className="relative bg-white/90 backdrop-blur-sm border-4 border-gamusa-red/20 rounded-2xl px-6 sm:px-8 md:px-12 py-6 sm:py-8 shadow-2xl">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gamusa-deep mb-2">
+                Workshop Details
+              </h2>
+              <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+                Everything you need to know about joining our Bihu Dance Workshop
+              </p>
+              <div className="mt-4 w-24 h-1.5 bg-gradient-to-r from-gamusa-red via-muga-gold to-gamusa-deep mx-auto rounded-full"></div>
+            </div>
+          </div>
         </div>
 
         {/* Cards Grid */}

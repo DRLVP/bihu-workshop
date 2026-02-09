@@ -97,15 +97,14 @@ export default function About() {
           {/* Decorative Elements */}
           <div className="mt-10 sm:mt-12 flex flex-wrap justify-center gap-6 sm:gap-8">
             {[
-              { icon: '🎭', label: 'সাংস্কৃতিক ঐতিহ্য', sublabel: 'Cultural Heritage' },
-              { icon: '🪘', label: 'পৰম্পৰাগত সংগীত', sublabel: 'Traditional Music' },
-              { icon: '💃', label: 'বিহু নৃত্য', sublabel: 'Bihu Dance' },
+              { label: 'সাংস্কৃতিক ঐতিহ্য', sublabel: 'Cultural Heritage' },
+              { label: 'পৰম্পৰাগত সংগীত', sublabel: 'Traditional Music' },
+              { label: 'বিহু নৃত্য', sublabel: 'Bihu Dance' },
             ].map((item) => (
               <div
                 key={item.label}
                 className="text-center group hover:scale-110 transition-transform duration-300"
               >
-                <div className="text-4xl sm:text-5xl mb-2 group-hover:animate-bounce">{item.icon}</div>
                 <div
                   className="text-sm sm:text-base text-gamusa-deep font-bold"
                   style={{ fontFamily: 'Georgia, serif' }}
