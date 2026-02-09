@@ -3,11 +3,12 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Curriculum from './components/Curriculum'
 import Gallery from './components/Gallery'
-import WorkshopDetails from './components/WorkshopDetails'
 import Rules from './components/Rules'
 import Registration from './components/Registration'
 import Footer from './components/Footer'
 import './index.css'
+
+// remove workshop details
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
         <About />
         <Curriculum />
         <Gallery />
-        {/* <WorkshopDetails /> */}
         <Rules />
         <Registration />
       </main>

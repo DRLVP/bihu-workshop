@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Instagram, Youtube, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -7,7 +7,6 @@ export default function Footer() {
     { icon: Facebook, label: 'Facebook', href: '#' },
     { icon: Instagram, label: 'Instagram', href: '#' },
     { icon: Youtube, label: 'YouTube', href: '#' },
-    { icon: Mail, label: 'Email', href: 'mailto:bihu.workshop@example.com' },
   ];
 
   const quickLinks = [
