@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
             <div className="min-w-0 flex-1">
               <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gamusa-deep truncate">
-                লাকুৱা কেন্দ্ৰীয় বিহু
+                লাকুৱা কেন্দ্ৰীয় বিহু কৰ্মশালা
               </h2>
             </div>
           </div>

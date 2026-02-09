@@ -50,7 +50,7 @@ export default function About() {
               style={{ fontFamily: 'Georgia, serif' }}
             >
               "বিহু আমাৰ বাপতি সাহোন, বিহু আমাৰ প্ৰাণ।<br />
-              জাতিৰ পিতাৰ উশাহ-নিশাহ, অসমীয়াৰ পৰিচয় আৰু সন্মান।"
+              জাতিৰ উশাহ-নিশাহ, অসমীয়াৰ পৰিচয় আৰু সন্মান।"
             </p>
             <div className="mt-4 w-16 h-1 bg-gradient-to-r from-gamusa-red to-muga-gold mx-auto"></div>
           </div>
