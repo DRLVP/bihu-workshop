@@ -39,15 +39,9 @@ export default function Navbar() {
             >
               About
             </button>
-            <button
-              onClick={() => scrollToSection('details')}
-              className="text-gray-700 hover:text-gamusa-red transition-colors font-medium whitespace-nowrap cursor-pointer"
-            >
-              Details
-            </button>
             <Button
               variant="bihu"
-              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSf3kBjLJHJ7iIsu96zPmuBAikvdV4K5VRnQnbitzc5oTfOzyQ/viewform', '_blank')}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeI9xfbUFfkyB_C-ByfvLLXAQIcoYyjEPoz_yLg8gKFubLlrg/viewform', '_blank')}
               className="!text-white font-bold shadow-lg text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-2.5 whitespace-nowrap cursor-pointer"
             >
               Register Now
