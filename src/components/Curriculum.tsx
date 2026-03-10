@@ -4,6 +4,11 @@ import pepaImage from '../assets/bihu-pepa-playing.png';
 import bihuDanceImage from '../assets/bihu-dance.png';
 import gamosa1 from '../assets/gamosa-1.png';
 import gamosa2 from '../assets/gamosa-2.png';
+import teacher1 from '../assets/teacher-1.jpeg';
+import teacher2 from '../assets/teacher-2.jpeg';
+import teacher3 from '../assets/teacher-3.jpeg';
+import teacher4 from '../assets/teacher-4.jpeg';
+import teacher5 from '../assets/teacher-5.jpeg';
 
 export default function Curriculum() {
   const curriculumItems = [
@@ -25,6 +30,14 @@ export default function Curriculum() {
       image: pepaImage,
       imageAlt: 'Pepa (Horn) Playing',
     },
+  ];
+
+  const instructors = [
+    { image: teacher1, name: 'পূজা ফুকন', role: 'মুখ্য প্ৰশিক্ষক' },
+    { image: teacher2, name: 'গাৰ্গী ফুকন', role: 'সহ:প্ৰশিক্ষক' },
+    { image: teacher3, name: 'অংকুৰ গগৈ', role: 'পেপাৰ প্ৰশিক্ষক' },
+    { image: teacher4, name: 'পৰশ বৰগোঁহাই', role: 'ঢোলৰ প্ৰশিক্ষক' },
+    { image: teacher5, name: 'ৰঞ্জন গগৈ', role: 'সহ:প্ৰশিক্ষক' },
   ];
 
   return (
@@ -138,6 +151,37 @@ export default function Curriculum() {
                 <div className="h-1.5 bg-gradient-to-r from-gamusa-red via-muga-gold to-gamusa-deep transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
               </div>
             ))}
+          </div>
+
+          {/* Instructors Section */}
+          <div className="mb-10 sm:mb-12 md:mb-16">
+            <h3
+              className="text-2xl sm:text-3xl font-bold text-center text-gamusa-deep mb-8"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              আমাৰ প্ৰশিক্ষকসকল (Our Instructors)
+            </h3>
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+              {instructors.map((instructor, index) => (
+                <div key={index} className="flex flex-col items-center group cursor-pointer">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:border-gamusa-red transition-all duration-300 transform group-hover:-translate-y-2">
+                    <img
+                      src={instructor.image}
+                      alt={instructor.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="mt-4 text-center">
+                    <p className="font-bold text-gamusa-deep text-lg sm:text-xl" style={{ fontFamily: 'Georgia, serif' }}>
+                      {instructor.name}
+                    </p>
+                    <p className="text-sm font-semibold text-gamusa-red mt-1">
+                      ({instructor.role})
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Call to Action */}

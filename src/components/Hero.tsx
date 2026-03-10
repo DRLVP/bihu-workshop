@@ -118,11 +118,14 @@ export default function Hero() {
             <span className="block mt-2 sm:mt-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl bg-gradient-to-r from-muga-gold via-muga-cream to-muga-gold bg-clip-text text-transparent drop-shadow-2xl font-black">২০২৬</span>
           </h1>
 
-          {/* Venue text with gamosa-inspired background */}
+          {/* Venue and Date text with gamosa-inspired background */}
           <div className="mb-4 sm:mb-6 animate-fade-in-up delay-200 px-2">
             <div className="inline-block bg-gradient-to-r from-gamusa-red/20 via-muga-gold/30 to-gamusa-red/20 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-2xl border-2 border-muga-gold/40 shadow-2xl">
-              <p className="text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-muga-cream via-white to-muga-cream bg-clip-text text-transparent font-bold tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
-                স্থানঃ লাইলৌ বৰুৱা ক্ষেত্ৰ (লাকুৱা চাৰিঙ্গীয়া কোঁৱৰ ৰাজহুৱা খেলপথাৰ)
+              <p className="text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-muga-cream via-white to-muga-cream bg-clip-text text-transparent font-bold tracking-wide mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+                স্থানঃ লাকুৱা সৃজনী সমাজ প্ৰাংগন
+              </p>
+              <p className="text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-muga-gold via-white to-muga-gold bg-clip-text text-transparent font-bold tracking-wide" style={{ fontFamily: 'Georgia, serif' }}>
+                তাৰিখঃ ১৫ মাৰ্চৰ পৰা ২৯ মাৰ্চলৈ
               </p>
             </div>
             <div className="w-32 sm:w-40 h-1.5 bg-gradient-to-r from-gamusa-red via-muga-gold to-gamusa-red mx-auto mt-4 sm:mt-5 rounded-full shadow-lg"></div>

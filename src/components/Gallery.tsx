@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Image as ImageIcon, Video } from 'lucide-react';
 import gamosa1 from '../assets/gamosa-1.png';
-import bihu1 from '../assets/bihu1.jpg';
-import bihu2 from '../assets/bihu2.jpg';
-import bihu3 from '../assets/bihu3.jpg';
-import dholImage from '../assets/bihu-dhol-playing.png';
-import pepaImage from '../assets/bihu-pepa-playing.png';
-import bihuDanceImage from '../assets/bihu-dance.png';
+import workshop1 from '../assets/workshop-1.jpg';
+import workshop2 from '../assets/workshop-2.jpg';
+import workshop3 from '../assets/workshop-3.jpg';
+import workshop4 from '../assets/workshop-4.jpg';
+import workshop5 from '../assets/workshop-5.jpg';
+import workshop6 from '../assets/workshop-6.jpg';
 
 export default function Gallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,13 +14,16 @@ export default function Gallery() {
   const [isPaused, setIsPaused] = useState(false);
 
   const galleryItems = [
-    { image: bihu1, title: 'বিহু নৃত্য প্ৰদৰ্শন', subtitle: 'Bihu Dance Performance' },
-    { image: bihu2, title: 'সাংস্কৃতিক কাৰ্যসূচী', subtitle: 'Cultural Program' },
-    { image: bihu3, title: 'পৰম্পৰাগত উৎসৱ', subtitle: 'Traditional Festival' },
-    { image: dholImage, title: 'ঢোল বাদন', subtitle: 'Dhol Playing' },
-    { image: bihuDanceImage, title: 'বিহু নাচ', subtitle: 'Bihu Dance' },
-    { image: pepaImage, title: 'পেঁপা বাদন', subtitle: 'Pepa Playing' },
+    { image: workshop1, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop2, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop3, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop4, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop5, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop6, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
   ];
+
+  // Default Facebook Video URL
+  const facebookVideoUrl = 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100082564459517%2Fvideos%2Fpcb.643684125060397%2F1023034236372943&show_text=0&width=560';
 
   // Auto-rotate slides every 3 seconds
   useEffect(() => {
@@ -170,8 +173,8 @@ export default function Gallery() {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full cursor-pointer ${index === currentSlide
-                    ? 'w-10 h-3 bg-gamusa-red'
-                    : 'w-3 h-3 bg-gray-300 hover:bg-gamusa-red/50'
+                  ? 'w-10 h-3 bg-gamusa-red'
+                  : 'w-3 h-3 bg-gray-300 hover:bg-gamusa-red/50'
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -195,6 +198,41 @@ export default function Gallery() {
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
             </div>
           ))}
+        </div>
+
+        {/* Video Player Section */}
+        <div className="mt-16 sm:mt-24 max-w-5xl mx-auto border-t-2 border-gamusa-red/20 pt-16">
+          <div className="text-center mb-10 relative">
+            <div className="inline-flex items-center gap-2 bg-gamusa-red/10 px-4 py-2 rounded-full border border-gamusa-red/20 mb-4">
+              <Video className="h-4 w-4 text-gamusa-red" />
+              <span className="text-gamusa-deep text-sm font-semibold">ভिडिओ (Videos)</span>
+            </div>
+            <h3
+              className="text-2xl sm:text-3xl md:text-4xl font-bold text-gamusa-deep mb-3"
+              style={{ fontFamily: 'Georgia, serif' }}
+            >
+              কৰ্মশালাৰ দৃশ্যকল্প
+            </h3>
+            <p className="text-sm sm:text-base text-gray-600 italic">
+              (Glimpses from the workshop)
+            </p>
+          </div>
+
+          <div className="flex justify-center w-full">
+            <div className="relative w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-video bg-black flex items-center justify-center">
+              <iframe
+                src={facebookVideoUrl}
+                width="100%"
+                height="100%"
+                style={{ border: 'none', overflow: 'hidden' }}
+                scrolling="no"
+                frameBorder="0"
+                allowFullScreen={true}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                title="Facebook Video Player"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 

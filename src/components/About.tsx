@@ -83,13 +83,7 @@ export default function About() {
                 className="text-xl sm:text-2xl md:text-3xl font-bold text-gamusa-deep"
                 style={{ fontFamily: 'Georgia, serif' }}
               >
-                লাইলৌ বৰুৱা ক্ষেত্ৰ
-              </p>
-              <p
-                className="text-base sm:text-lg md:text-xl text-gray-600 mt-3"
-                style={{ fontFamily: 'Georgia, serif' }}
-              >
-                (লাকুৱা চাৰিঙ্গীয়া কোঁৱৰ ৰাজহুৱা খেলপথাৰ)
+                লাকুৱা সৃজনী সমাজ প্ৰাংগন
               </p>
             </div>
           </div>

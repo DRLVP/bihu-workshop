@@ -6,20 +6,20 @@ export default function WorkshopDetails() {
   const details = [
     {
       icon: Calendar,
-      title: 'Date & Time',
-      content: 'April 15-19, 2026',
-      subContent: '10:00 AM - 4:00 PM daily',
+      title: 'তাৰিখ (Date & Time)',
+      content: '১৫ মাৰ্চ – ২৯ মাৰ্চ, ২০২৬',
+      subContent: 'March 15-29 | 10:00 AM - 4:00 PM',
     },
     {
       icon: MapPin,
-      title: 'Venue',
-      content: 'Lakwa Community Hall',
-      subContent: 'Lakwa, Charaideo District, Assam',
+      title: 'স্থান (Venue)',
+      content: 'লাকুৱা সৃজনী সমাজ প্ৰাংগন',
+      subContent: 'Lakwa Srijani Samaj Prangan',
     },
     {
       icon: IndianRupee,
       title: 'Registration Fee',
-      content: '₹500 only',
+      content: '₹200 only',
       subContent: 'Includes materials & certificate',
     },
     {
