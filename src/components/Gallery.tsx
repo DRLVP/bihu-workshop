@@ -205,7 +205,7 @@ export default function Gallery() {
           <div className="text-center mb-10 relative">
             <div className="inline-flex items-center gap-2 bg-gamusa-red/10 px-4 py-2 rounded-full border border-gamusa-red/20 mb-4">
               <Video className="h-4 w-4 text-gamusa-red" />
-              <span className="text-gamusa-deep text-sm font-semibold">ভिडिओ (Videos)</span>
+              <span className="text-gamusa-deep text-sm font-semibold">ভিডিঅ সমূহ (Videos)</span>
             </div>
             <h3
               className="text-2xl sm:text-3xl md:text-4xl font-bold text-gamusa-deep mb-3"
