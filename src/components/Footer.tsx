@@ -1,4 +1,6 @@
 import { Facebook, Instagram, Youtube, MapPin, Phone } from 'lucide-react';
+import ongcLogo from '../assets/ONGC.png';
+import digiHubLogo from '../assets/DiGI-Hub.jpeg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -23,6 +25,26 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-muga-gold via-muga-cream to-muga-gold"></div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
+        {/* Powered By Section */}
+        <div className="flex flex-col items-center justify-center mb-10 sm:mb-12 border-b border-white/10 pb-8 sm:pb-10">
+          <p className="text-sm sm:text-base text-muga-cream font-medium mb-4 tracking-widest uppercase" style={{ fontFamily: 'Georgia, serif' }}>
+            Powered By
+          </p>
+          <div className="flex items-center gap-6 sm:gap-10 py-4 px-6 sm:px-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-xl">
+            <img 
+              src={digiHubLogo} 
+              alt="DiGI Hub" 
+              className="h-10 sm:h-14 md:h-16 object-contain bg-white rounded-lg p-1.5 sm:p-2" 
+            />
+            <div className="w-px h-10 sm:h-14 bg-white/20"></div>
+            <img 
+              src={ongcLogo} 
+              alt="ONGC" 
+              className="h-10 sm:h-14 md:h-16 object-contain bg-white rounded-lg p-1.5 sm:p-2" 
+            />
+          </div>
+        </div>
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-10">
 
