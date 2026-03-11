@@ -7,6 +7,20 @@ import workshop3 from '../assets/workshop-3.jpg';
 import workshop4 from '../assets/workshop-4.jpg';
 import workshop5 from '../assets/workshop-5.jpg';
 import workshop6 from '../assets/workshop-6.jpg';
+import workshop7 from '../assets/workshop-7.jpeg';
+import workshop8 from '../assets/workshop-8.jpeg';
+import workshop9 from '../assets/workshop-9.jpeg';
+import workshop10 from '../assets/workshop-10.jpeg';
+import workshop11 from '../assets/workshop-11.jpeg';
+import workshop12 from '../assets/workshop-12.jpeg';
+import workshop13 from '../assets/workshop-13.jpeg';
+import workshop14 from '../assets/workshop-14.jpeg';
+import workshop15 from '../assets/workshop-15.jpeg';
+import workshop16 from '../assets/workshop-16.jpeg';
+import workshop17 from '../assets/workshop-17.jpeg';
+import workshop18 from '../assets/workshop-18.jpeg';
+import workshop19 from '../assets/workshop-19.jpeg';
+import workshop20 from '../assets/workshop-20.jpeg';
 
 export default function Gallery() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,6 +34,20 @@ export default function Gallery() {
     { image: workshop4, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
     { image: workshop5, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
     { image: workshop6, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop7, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop8, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop9, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop10, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop11, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop12, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop13, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop14, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop15, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop16, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop17, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop18, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop19, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
+    { image: workshop20, title: 'কৰ্মশালাৰ মুহূৰ্ত', subtitle: 'Workshop Moment' },
   ];
 
   // Default Facebook Video URL
